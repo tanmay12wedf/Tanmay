@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AI Universe - Learn the Future</title>
+  <style>
+    /* Cursor animation */
+    body {
+      cursor: url('https://cur.cursors-4u.net/symbols/sym-9/sym897.cur'), auto;
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #0f2027;
+      background: linear-gradient(to right, #2c5364, #203a43, #0f2027);
+      color: white;
+    }
+
+    header {
+      text-align: center;
+      padding: 3rem 1rem;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      color: #bbb;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .animated-img {
+      width: 300px;
+      transition: transform 0.4s ease-in-out;
+      border-radius: 15px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    }
+
+    .animated-img:hover {
+      transform: scale(1.1) rotate(2deg);
+    }
+
+    .content {
+      max-width: 900px;
+      margin: auto;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    .button {
+      padding: 1rem 2rem;
+      background: #00c6ff;
+      color: black;
+      font-weight: bold;
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .button:hover {
+      background: #0072ff;
+      color: white;
+    }
+
+    form {
+      margin-top: 3rem;
+      background: #1c1c1c;
+      padding: 2rem;
+      border-radius: 10px;
+    }
+
+    input, textarea {
+      width: 90%;
+      padding: 0.8rem;
+      margin: 1rem 0;
+      border: none;
+      border-radius: 5px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      color: #aaa;
+    }
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Welcome to AI Universe</h1>
+    <p>Explore the world of Artificial Intelligence and master the future with our advanced AI course</p>
+  </header>
+
+  <div class="content">
+    <img src="https://images.unsplash.com/photo-1581090700227-1e8e8d1a78b5" alt="AI Concept" class="animated-img" />
+    <h2>🌟 Why Learn AI?</h2>
+    <p>Artificial Intelligence is transforming every industry. From healthcare to finance to entertainment — AI is the power behind smart decisions and automation.</p>
+
+    <h2>📘 Our AI Course</h2>
+    <p>Our AI course is designed for beginners and professionals. It covers Machine Learning, Deep Learning, NLP, and practical projects with real-world applications.</p>
+
+    <button class="button" onclick="document.getElementById('form-section').scrollIntoView({ behavior: 'smooth' })">
+      Join the Waitlist
+    </button>
+
+    <div id="form-section">
+      <form action="mailto:tanmaybirkalwar12@gmail.com" method="post" enctype="text/plain">
+        <h3>📩 Send us your interest</h3>
+        <input type="text" name="name" placeholder="Your Full Name" required />
+        <input type="email" name="email" placeholder="Your Email Address" required />
+        <textarea name="message" rows="4" placeholder="Tell us why you want to learn AI..."></textarea>
+        <br />
+        <button class="button" type="submit">Send Email</button>
+      </form>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 AI Universe. Designed by Tanmay Birkalwar.
+  </footer>
+
+</body>
+</html>
