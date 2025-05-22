@@ -1,0 +1,108 @@
+/* DARK MODE & GLOBAL STYLES */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  cursor: url('https://cur.cursors-4u.net/symbols/sym-9/sym897.cur'), auto;
+  font-family: 'Segoe UI', sans-serif;
+  background: #0e0e0e;
+  color: #ffffff;
+  line-height: 1.6;
+}
+
+header {
+  text-align: center;
+  padding: 3rem 1rem;
+  animation: fadeIn 2s ease-in-out;
+  background: #121212;
+}
+
+header h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: #00ffff;
+}
+
+header p {
+  font-size: 1.2rem;
+  color: #aaaaaa;
+}
+
+.content {
+  max-width: 900px;
+  margin: auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.animated-img {
+  width: 100%;
+  max-width: 350px;
+  transition: transform 0.4s ease-in-out;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.7);
+}
+
+.animated-img:hover {
+  transform: scale(1.08) rotate(2deg);
+}
+
+h2 {
+  color: #00ffff;
+  margin-top: 2rem;
+}
+
+p {
+  color: #cccccc;
+  padding: 0.5rem;
+}
+
+.button {
+  padding: 1rem 2rem;
+  background: #00c6ff;
+  color: black;
+  font-weight: bold;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: 0.3s;
+}
+
+.button:hover {
+  background: #0072ff;
+  color: white;
+}
+
+form {
+  margin-top: 3rem;
+  background: #1a1a1a;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0,255,255,0.1);
+}
+
+input, textarea {
+  width: 90%;
+  padding: 0.8rem;
+  margin: 1rem 0;
+  background: #2a2a2a;
+  color: #ffffff;
+  border: 1px solid #333;
+  border-radius: 5px;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem;
+  color: #777;
+  background: #121212;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
