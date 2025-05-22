@@ -1,0 +1,22 @@
+// Typing animation
+const heading="Welcome to AI Universe";let i=0;
+function typeHeading(){
+  const title=document.querySelector("#main-title");
+  if(i<heading.length){title.textContent+=heading.charAt(i);i++;setTimeout(typeHeading,100);}
+}
+document.addEventListener("DOMContentLoaded",typeHeading);
+
+// Smooth scroll to form
+document.querySelector(".button").addEventListener("click",()=>{document.getElementById("form-section").scrollIntoView({behavior:"smooth"});});
+
+// Fade-in on scroll
+const faders=document.querySelectorAll(".fade-in");
+const appearOptions={threshold:0.2,rootMargin:"0px 0px -50px 0px"};
+const appearOnScroll=new IntersectionObserver(function(entries,observer){
+  entries.forEach(entry=>{
+    if(!entry.isIntersecting)return;
+    entry.target.classList.add("appear");
+    observer.unobserve(entry.target);
+  });
+},appearOptions);
+faders.forEach(fader=>{appearOnScroll.observe(fader);});
